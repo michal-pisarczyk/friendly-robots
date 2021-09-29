@@ -1,5 +1,6 @@
 import React from "react";
+import "./card-list.style.css";
 
 export const CardList = (props) => (
-  <div>{ console.log(props, props.children) }</div>
+  <div className="card-list">{ props.children }</div>
 );
