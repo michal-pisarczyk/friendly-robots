@@ -9,7 +9,8 @@ class App extends Component {
         id: "placeholder-id",
         name: "Placeholder Name"
       }
-    ]
+    ],
+    inputSearch: ""
   };
 
   componentDidMount() {
@@ -21,6 +22,10 @@ class App extends Component {
   render() {
     return (
       <div className="App">
+        <input
+          type="search"
+          placeholder="Search Monsters"
+          onChange={ event => this.setState({ inputSearch: event.target.value }) } />
         <CardList monsters={ this.state.monsters } />
       </div>
     );
