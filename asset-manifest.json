@@ -1,0 +1,24 @@
+{
+  "files": {
+    "main.css": "/friendly-robots/static/css/main.afb67f3a.chunk.css",
+    "main.js": "/friendly-robots/static/js/main.24be6b2b.chunk.js",
+    "main.js.map": "/friendly-robots/static/js/main.24be6b2b.chunk.js.map",
+    "runtime-main.js": "/friendly-robots/static/js/runtime-main.7a50496c.js",
+    "runtime-main.js.map": "/friendly-robots/static/js/runtime-main.7a50496c.js.map",
+    "static/js/2.7ddef17c.chunk.js": "/friendly-robots/static/js/2.7ddef17c.chunk.js",
+    "static/js/2.7ddef17c.chunk.js.map": "/friendly-robots/static/js/2.7ddef17c.chunk.js.map",
+    "static/js/3.3feec391.chunk.js": "/friendly-robots/static/js/3.3feec391.chunk.js",
+    "static/js/3.3feec391.chunk.js.map": "/friendly-robots/static/js/3.3feec391.chunk.js.map",
+    "index.html": "/friendly-robots/index.html",
+    "service-worker.js": "/friendly-robots/service-worker.js",
+    "service-worker.js.map": "/friendly-robots/service-worker.js.map",
+    "static/css/main.afb67f3a.chunk.css.map": "/friendly-robots/static/css/main.afb67f3a.chunk.css.map",
+    "static/js/2.7ddef17c.chunk.js.LICENSE.txt": "/friendly-robots/static/js/2.7ddef17c.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.7a50496c.js",
+    "static/js/2.7ddef17c.chunk.js",
+    "static/css/main.afb67f3a.chunk.css",
+    "static/js/main.24be6b2b.chunk.js"
+  ]
+}
