@@ -26,8 +26,9 @@ class App extends Component {
           type="search"
           placeholder="Search Monsters"
           onChange={ event => {
-              this.setState({ inputSearch: event.target.value });
-              console.log(this.state);
+              this.setState({ inputSearch: event.target.value }, () => {
+                console.log(this.state);
+              });
             }
           } />
         <CardList monsters={ this.state.monsters } />
