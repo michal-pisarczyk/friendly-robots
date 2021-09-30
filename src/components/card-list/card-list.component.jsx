@@ -5,12 +5,12 @@ import { Card } from "../card/card.component";
 export const CardList = props => (
   <div className="card-list">
     {
-      props.monsters.map(monster => (
+      props.friends.map(friend => (
         <Card
-          key={ monster.id }
-          monsterId={ monster.id }
-          monsterName={ monster.name }
-          monsterEmail={ monster.email } />
+          key={ friend.id }
+          friendId={ friend.id }
+          friendName={ friend.name }
+          friendEmail={ friend.email } />
       ))
     }
   </div>

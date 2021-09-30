@@ -1,3 +1,11 @@
 .App {
   text-align: center;
 }
+
+h1 {
+  font-family: "Big Shoulders Stencil Text", cursive;
+  font-size: 3em;
+  color: navajowhite;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, .3);
+  box-shadow: 0 0 3em 3em rgba(0, 0, 0, .05);
+}

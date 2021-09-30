@@ -6,10 +6,10 @@ import { InputSearch }
 
 class App extends Component {
   state = {
-    monsters: [
+    friends: [
       {
-        id: "placeholder-id",
-        name: "Placeholder Name"
+        id: "",
+        name: ""
       }
     ],
     inputSearch: ""
@@ -18,25 +18,27 @@ class App extends Component {
   componentDidMount() {
     fetch("https://jsonplaceholder.typicode.com/users")
       .then(response => response.json())
-      .then(users => this.setState({ monsters: users }));
+      .then(users => this.setState({ friends: users }));
+  }
+
+  handleChange = event => {
+    this.setState({ inputSearch: event.target.value });
   }
 
   render() {
-    const { monsters, inputSearch } = this.state;
-    const filteredMonsters = monsters.filter(monster =>
-      monster.name.toLowerCase().includes(inputSearch.toLowerCase())
+    const { friends, inputSearch } = this.state;
+    const filteredFriends = friends.filter(friend =>
+      friend.name.toLowerCase().includes(inputSearch.toLowerCase())
     );
 
     return (
       <div className="App">
+        <h1>Friendly Robots</h1>
         <InputSearch
-          placeholder="Search Monsters"
-          handleChange={ event => {
-              this.setState({ inputSearch: event.target.value });
-            }
-          }
+          placeholder="Search Friends"
+          handleChange={ event => this.handleChange(event) }
         />
-        <CardList monsters={ filteredMonsters } />
+        <CardList friends={ filteredFriends } />
       </div>
     );
   }

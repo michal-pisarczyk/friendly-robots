@@ -1,17 +1,39 @@
-.card-container {
+h2 {
+  font-family: "Big Shoulders Stencil Text", cursive;
+  font-size: 2em;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, .3);
+}
+
+hr {
+  width: 100%;
+  border-width: 1px 0 0 0;
+  border-style: dotted;
+  margin: 0;
+}
+
+p {
+  font-family: 'Gemunu Libre', sans-serif;
+  font-size: .95em;
+}
+
+.card {
   display: flex;
   flex-direction: column;
-  background-color: #95dada;
-  border: 1px solid grey;
+  background-color: rgba(255, 255, 255, .3);
   border-radius: 5px;
   padding: 25px;
   cursor: pointer;
   -moz-osx-font-smoothing: grayscale;
   backface-visibility: hidden;
   transform: translateZ(0);
-  transition: transform .25s ease-out;
+  box-shadow: none;
+  transition-property: transform, box-shadow, background-color;
+  transition-duration: .25s;
+  transition-timing-function: ease-out;
 }
 
-.card-container:hover {
+.card:hover {
   transform: scale(1.05);
+  box-shadow: 0 0 3em 3em rgba(0, 0, 0, .05);
+  background-color: rgba(255, 255, 255, .4);
 }
